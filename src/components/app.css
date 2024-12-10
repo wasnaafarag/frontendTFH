@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6f0; /* Soft pastel background */
+    color: #333;
+  }
+  
+  /* App Container */
+  .app {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  .header {
+    background: linear-gradient(120deg, #ffdfba, #f4cfdf);
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: #8c5b5d; /* Warm floral tone */
+    margin: 0;
+  }
+  
+  .slogan {
+    font-size: 1.2rem;
+    color: #5d8c7f; /* Muted green for balance */
+    margin-top: 10px;
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #fff8e7; /* Soft pastel yellow */
+    border: 1px solid #ffdfba;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome-section h2 {
+    color: #8c5b5d;
+  }
+  
+  /* Questionnaire Section */
+  .questionnaire-section {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #f4f4fc; /* Light pastel lavender */
+    border: 1px solid #dfd7f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .options {
+    margin-top: 20px;
+  }
+  
+  .option-button {
+    background-color: #ffe4e1; /* Light coral */
+    color: #333;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .option-button:hover {
+    transform: scale(1.05);
+    background-color: #ffdfba; /* Slightly darker coral */
+  }
+  
+  /* Footer Section */
+  .footer {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #8c5b5d; /* Warm floral tone */
+    color: #fff;
+    border-radius: 10px;
+  }
+  
