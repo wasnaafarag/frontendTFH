@@ -1,27 +1,35 @@
+import './LoginForm.css';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';  // Ensure useNavigate is imported
 
-const LoginForm = () => {
-  const [loginData, setLoginData] = useState({
-    email: '',
-    password: ''
-  });
+const LoginForm = ({ handleLogin }) => {
+  const [loginData, setLoginData] = useState({ email: '', password: '' });
+  const navigate = useNavigate();  // Initialize useNavigate
 
+  // Handle form input change
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setLoginData(prev => ({ ...prev, [name]: value }));
+    setLoginData((prev) => ({ ...prev, [name]: value }));
   };
 
+  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Simulate API request (you can replace this with real backend call)
     const response = await fetch('http://localhost:7777/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(loginData)
+      body: JSON.stringify(loginData),
     });
+
     const data = await response.json();
+
+    // Check if login is successful
     if (data.success) {
       alert('Login successful!');
-      // Redirect to user dashboard or home page
+      handleLogin(data.user);  // Save user info after successful login
+      navigate('/preferences');  // Redirect to preferences page after login
     } else {
       alert('Login failed!');
     }

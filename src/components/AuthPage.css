@@ -1,0 +1,32 @@
+.auth-container {
+    background: linear-gradient(to bottom, #ffedd8, #fcd5ce);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .auth-button {
+    padding: 15px 30px;
+    font-size: 1em;
+    color: white;
+    background: #ffb4a2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .auth-button:hover {
+    background: #e5989b;
+  }
+  

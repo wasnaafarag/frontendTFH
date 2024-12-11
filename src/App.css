@@ -1,38 +1,52 @@
+/* App.css */
+
+/* Background color for the whole page */
 .App {
+  background-color: #949494; /* Light pastel pink */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Welcome page styling */
+.welcome-page {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: #fbcfe0; /* Pastel pink background */
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  max-width: 500px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px;
+}
+
+.main-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #434343; /* Slightly darker pastel pink */
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  color: #625f5f; /* Gray color for the subtitle */
+}
+
+.continue-btn {
+  background-color: #434343;
   color: white;
+  font-size: 1rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.continue-btn:hover {
+  background-color: #fbbcdb;
 }

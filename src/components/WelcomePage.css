@@ -1,0 +1,32 @@
+.welcome-container {
+    background: linear-gradient(to bottom, #fef6e4, #ffe8d6);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .slogan {
+    font-size: 1.2em;
+    color: #7d5a50;
+    margin-bottom: 20px;
+  }
+  
+  .continue-button {
+    padding: 15px 30px;
+    font-size: 1em;
+    color: white;
+    background: #e5989b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .continue-button:hover {
+    background: #b5838d;
+  }
+  

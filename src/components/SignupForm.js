@@ -1,4 +1,6 @@
+import './SignupForm.css'; // Import the CSS file at the top
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';  // Import useNavigate hook
 
 const SignupForm = () => {
   const [formData, setFormData] = useState({
@@ -9,22 +11,26 @@ const SignupForm = () => {
     age: ''
   });
 
+  const navigate = useNavigate();  // Initialize useNavigate hook
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent the default form submission behavior
+
     const response = await fetch('http://localhost:7777/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)
     });
+
     const data = await response.json();
     if (data.message) {
       alert(data.message || 'User registered successfully');
-      window.location.href = '/';  // Redirect to login page
+      navigate('/');  // Use navigate hook to go to the login page after signup
     } else {
       alert('Signup failed');
     }

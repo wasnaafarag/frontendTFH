@@ -1,0 +1,70 @@
+/* LoginForm.css */
+
+/* Container for the login form */
+.form-container {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  /* Heading styling */
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #434343; /* Dark gray */
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields styling */
+  input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #f0f0f0;
+  }
+  
+  input:focus {
+    border-color: #fbcfe0; /* Light pink when focused */
+    outline: none;
+  }
+  
+  /* Submit button styling */
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    color: white;
+    background-color: #434343;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #fbbcdb; /* Light pink when hovered */
+  }
+  
+  /* Link to signup page */
+  p {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  
+  p a {
+    text-decoration: none;
+    color: #434343;
+    font-weight: bold;
+  }
+  
+  p a:hover {
+    color: #fbcfe0; /* Light pink when hovered */
+  }
+  
