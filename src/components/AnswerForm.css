@@ -1,0 +1,76 @@
+/* Basic styling for the form container */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form text styling */
+  h2 {
+    text-align: center;
+    color: #434343;
+    margin-bottom: 20px;
+  }
+  
+  /* Input, select, and button styling */
+  input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #434343;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #fbbcdb;
+  }
+  
+  /* Custom scrollable list */
+  .scrollable-list {
+    max-height: 250px; /* Set height for scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Checkbox labels styling */
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  /* Image styling */
+  .scent-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+  }
+  
+  .scent-image {
+    width: 30px; /* Set width of the image */
+    height: 30px; /* Set height of the image */
+    object-fit: cover; /* Ensure the image fits the container */
+    border-radius: 5px; /* Optional: add border radius to make images rounded */
+  }
+  
+  /* Label styling */
+  label {
+    font-size: 1rem;
+    color: #434343;
+    margin-bottom: 8px;
+    display: block;
+  }
+  

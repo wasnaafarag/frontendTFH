@@ -1,13 +1,19 @@
-import React from 'react';
-import './AuthPage.css';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const AuthPage = ({ onLogin, onSignup }) => {
+const AuthPage = () => {
   return (
-    <div className="auth-container">
-      <h2>Welcome back! Please choose:</h2>
-      <div className="auth-buttons">
-        <button className="auth-button" onClick={onLogin}>Log In</button>
-        <button className="auth-button" onClick={onSignup}>Sign Up</button>
+    <div className="auth-page">
+      <h2>Welcome! Please Log In or Sign Up</h2>
+      
+      {/* Buttons to navigate between login and signup */}
+      <div className="auth-options">
+        <Link to="/login">
+          <button>Login</button>
+        </Link>
+        <Link to="/signup">
+          <button>Sign Up</button>
+        </Link>
       </div>
     </div>
   );

@@ -1,0 +1,51 @@
+/* UserForm.css */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #7f8c8d;
+  }
+  
+  .error-message,
+  .success-message {
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .success-message {
+    color: #2ecc71;
+  }
+  

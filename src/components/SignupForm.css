@@ -1,70 +1,99 @@
-/* SignupForm.css */
+/* Style for the SignupForm */
+.signup-form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #fbcfe0; /* Pastel pink background */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Align items inside the form */
+}
 
-/* Container for the signup form */
-.form-container {
-    background-color: #f9f9f9; /* Light gray background */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: 50px auto;
-    text-align: center;
+/* Ensure input fields are full width inside the container */
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fff;
+  box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+/* Input focus styles */
+input:focus {
+  border-color: #434343; /* Darker color on focus */
+  outline: none;
+}
+
+/* Style for submit button */
+button {
+  background-color: #434343; /* Dark color button */
+  color: white;
+  font-size: 1rem;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #fbbcdb; /* Light pink hover effect */
+}
+
+/* SignUp Button Styling */
+.signup-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signup-container button {
+  background-color: #fbcfe0; /* Light pink background */
+  color: #434343; /* Dark color */
+  font-size: 1rem;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-container button:hover {
+  background-color: #fbbcdb; /* Light pink hover effect */
+}
+
+/* Heading for the SignupForm */
+h2 {
+  text-align: center;
+  color: #434343; /* Darker color for the heading */
+  margin-bottom: 20px;
+}
+
+/* Style for input placeholders */
+input::placeholder {
+  color: #625f5f; /* Gray color from the subtitle text in App.css */
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 480px) {
+  .signup-form-container {
+    padding: 15px; /* Adjust padding for smaller screens */
   }
-  
-  /* Heading styling */
-  h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #434343; /* Dark gray */
-    margin-bottom: 20px;
+
+  input {
+    font-size: 0.9rem; /* Slightly smaller font size on mobile */
   }
-  
-  /* Input fields styling */
-  input, select {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 1rem;
-    background-color: #f0f0f0;
-  }
-  
-  input:focus, select:focus {
-    border-color: #fbcfe0; /* Light pink when focused */
-    outline: none;
-  }
-  
-  /* Submit button styling */
+
   button {
-    width: 100%;
-    padding: 15px;
-    font-size: 1rem;
-    color: white;
-    background-color: #434343;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 0.9rem; /* Slightly smaller button text on mobile */
   }
-  
-  button:hover {
-    background-color: #fbbcdb; /* Light pink when hovered */
-  }
-  
-  /* Link to login page */
-  p {
-    font-size: 1rem;
-    margin-top: 15px;
-  }
-  
-  p a {
-    text-decoration: none;
-    color: #434343;
-    font-weight: bold;
-  }
-  
-  p a:hover {
-    color: #fbcfe0; /* Light pink when hovered */
-  }
-  
+}
+
+

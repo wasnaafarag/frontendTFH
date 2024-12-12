@@ -1,32 +1,53 @@
+/* WelcomePage.css */
 .welcome-container {
-    background: linear-gradient(to bottom, #fef6e4, #ffe8d6);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-  }
-  
-  .slogan {
-    font-size: 1.2em;
-    color: #7d5a50;
-    margin-bottom: 20px;
-  }
-  
-  .continue-button {
-    padding: 15px 30px;
-    font-size: 1em;
-    color: white;
-    background: #e5989b;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .continue-button:hover {
-    background: #b5838d;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f8f8;  /* Light background color */
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-header {
+  margin-bottom: 30px;
+}
+
+.welcome-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2c3e50;  /* Dark color for title */
+  margin-bottom: 10px;
+}
+
+.welcome-slogan {
+  font-size: 18px;
+  color: #7f8c8d;  /* Soft gray for slogan */
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.continue-section {
+  margin-top: 40px;
+}
+
+.continue-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #3498db;  /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.continue-button:hover {
+  background-color: #2980b9;  /* Hover effect for button */
+}
+
+.continue-button:focus {
+  outline: none;
+}
