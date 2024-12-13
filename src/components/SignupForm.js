@@ -1,6 +1,7 @@
 
 import './SignupForm.css'; // Make sure the path matches your file structure
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate to navigate between pages
 
 const SignupForm = () => {
   const [username, setUsername] = useState('');
@@ -8,6 +9,7 @@ const SignupForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [gender, setGender] = useState('');
+  const navigate = useNavigate(); // Define navigate function
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,6 +32,7 @@ const SignupForm = () => {
     const data = await response.json();
     if (response.ok) {
       alert('User registered successfully!');
+      navigate('/questions');
     } else {
       alert('Error: ' + data.error);
     }

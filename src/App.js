@@ -59,10 +59,11 @@ const App = () => {
       ) : (
         // This part is for showing Login or Signup Form
         <Routes>
-          <Route path="/" element={isSignup ? <SignupForm /> : <LoginForm />} />
-          <Route path="/preferences" element={<QuestionForm onSubmit={handlePreferencesSubmit} />} />
+          <Route path="/" element={<LoginForm />} />
+          <Route path="/signup" element={<SignupForm />} />
+          {/* <Route path="/preferences" element={<QuestionForm onSubmit={handlePreferencesSubmit} />} /> */}
           <Route path="/recommendations" element={<RecommendationForm userPreferences={userPreferences} />} />
-          <Route path="/questions" element={<QuestionForm />} />
+          <Route path="/questions" element={<QuestionForm onSubmit={handlePreferencesSubmit} />} />
           <Route path="/answers" element={<AnswerForm />} />
           <Route path="/perfumes" element={<PerfumeForm />} />
           <Route path="/users" element={<UserList />} />

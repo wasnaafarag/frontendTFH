@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './QuestionForm.css';
 
 const QuestionForm = ({ onSubmit, userPreferences }) => {
   // Safely initialize preferences with default values if they are undefined
@@ -44,13 +45,13 @@ const QuestionForm = ({ onSubmit, userPreferences }) => {
     });
   };
 
-  const scentChoices = ['Floral', 'Citrus', 'Woody', 'Spicy', 'Fresh'];
-  const categoryChoices = ['Luxury', 'Casual', 'Sporty', 'Elegant', 'Tropical'];
+  const scentChoices = ['Rose', 'Jasmine', 'Vanilla', 'Sandalwood', 'Cedarwood', 'Apple', 'Black Truffle', 'Vanilla'];
+  const categoryChoices = ['Luxury', 'Casual', 'Sporty', 'Elegant', 'Tropical', 'Citrus'];
 
   return (
     <form onSubmit={handleSubmit} className="question-form">
       <label>
-        Favorite Scents:
+        Favorite Notes:
         <div className="scrollable-dropdown">
           {scentChoices.map((scent, index) => (
             <div key={index} className="dropdown-item">
@@ -83,7 +84,7 @@ const QuestionForm = ({ onSubmit, userPreferences }) => {
         </div>
       </label>
 
-      <button type="submit">Submit Preferences</button>
+      <button type="submit">Submittttt Preferences</button>
     </form>
   );
 };
